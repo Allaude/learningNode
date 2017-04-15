@@ -1,0 +1,4 @@
+1. chat
+2. Handling repeating events with event emitters
+3. Implementing serial flow control
+4. Word Count
