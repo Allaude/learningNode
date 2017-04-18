@@ -3,7 +3,7 @@ var work = require('./lib/timetrack');
 var mysql = require('mysql');
 
 var db = mysql.createConnection({
-	host : '127.0.0.1',
+	host : 'localhost',
 	user : 'root',
 	password : '',
 	database : 'node'
@@ -41,9 +41,9 @@ db.query(
 	+ "date DATE, "
 	+ "archived INT(1) DEFAULT 0, "
 	+ "description LONGTEXT, "
-	+ "PRIMARY KEY (id)",
+	+ "PRIMARY KEY (id))",
 	function(err){
 		if (err) throw err;
 		console.log('Server Started...');
-		server.listen(3000,'127.0.0.1');
+		server.listen(3000);
 	});

@@ -24,7 +24,7 @@ exports.actionForm = function(id,path,label){
 exports.add = function(db,req,res){
 	exports.parseReceivedData(req,function(work){
 		db.query(
-			"INSERT INTO node(hours,date,description) "
+			"INSERT INTO work(hours,date,description) "
 			+"VALUES (?,?,?)",
 			[work.hours, work.date, work.description],
 			function(err){
@@ -36,7 +36,7 @@ exports.add = function(db,req,res){
 exports.delete = function(db,req,res){
 	exports.parseReceivedData(req,function(work){
 		db.query(
-			"DELETE FROM node WHERE id=?",
+			"DELETE FROM work WHERE id=?",
 			[work.id],
 			function(err){
 				if (err) throw err;
@@ -47,7 +47,7 @@ exports.delete = function(db,req,res){
 exports.archive = function(db,req,res){
 	exports.parseReceivedData(req,function(work){
 		db.query(
-			"UPDATE node SET archived WHERE id=?",
+			"UPDATE work SET archived WHERE id=?",
 			[work.id],
 			function(err){
 				if (err) throw err;
@@ -56,7 +56,7 @@ exports.archive = function(db,req,res){
 	});
 };
 exports.show = function(db,res,showArchived){
-	var query = "SELECT * FROM node " +
+	var query = "SELECT * FROM work " +
 	"WHERE archived=? " +
 	"ORDER BY date DESC";
 	var archiveValue = (showArchived) ? 1 : 0;
@@ -87,7 +87,7 @@ exports.workHitlistHtml = function(rows){
 		html += '<td>'+exports.workDeleteForm(rows[i].id)+'</td>';
 		html += '</tr>';
 	}
-	html += table;
+	html += '</table>';
 	return html;
 }
 exports.workFormHtml = function(){
