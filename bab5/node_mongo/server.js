@@ -22,6 +22,6 @@ client.open(function(err){
 		//collection.update(
 		//	{_id:_id},{$set:{"title":"I Must be Success"}},{safe:true},function(err){if (err) throw err; console.log("Successfull Updated")});
 		//collection.find({"title":"I Must be Success"}).toArray(function(err,result){if (err) throw err; console.log(result)});
-		collection.remove({_id:_id},{safe:true},function(err){if (err) throw err;console.log("Successfull Delete");})
+		//collection.remove({_id:_id},{safe:true},function(err){if (err) throw err;console.log("Successfull Delete");})
 	});
 });
