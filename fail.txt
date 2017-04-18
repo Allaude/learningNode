@@ -3,3 +3,4 @@
 3. Implementing serial flow control
 4. Word Count
 5. HTTPS, how to generate ssl? and built https web
+6. NoSQL redis because don't know how to install redist on windows
