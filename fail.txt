@@ -1,6 +1,5 @@
 1. Implementing serial flow control
-2. Word Count
-3. HTTPS, how to generate ssl? and built https web
-4. NoSQL redis because don't know how to install redist on windows
-5. bab7 and bab8 is skipped.
+2. HTTPS, how to generate ssl? and built https web
+3. NoSQL redis because don't know how to install redist on windows
+4. bab7 and bab8 is skipped.
 
