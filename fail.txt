@@ -1,8 +1,6 @@
-1. chat
-2. Handling repeating events with event emitters
-3. Implementing serial flow control
-4. Word Count
-5. HTTPS, how to generate ssl? and built https web
-6. NoSQL redis because don't know how to install redist on windows
-7. bab7 and bab8 is skipped.
+1. Implementing serial flow control
+2. Word Count
+3. HTTPS, how to generate ssl? and built https web
+4. NoSQL redis because don't know how to install redist on windows
+5. bab7 and bab8 is skipped.
 
